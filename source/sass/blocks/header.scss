@@ -1,0 +1,12 @@
+.header {
+  margin: 0 auto;
+  padding: 34px 106px 31px 88px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__data-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}

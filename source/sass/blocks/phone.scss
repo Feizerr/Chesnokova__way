@@ -1,0 +1,22 @@
+.header__phone {
+  position: relative;
+  padding-left: 50px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header__phone {
+    display: none;
+  }
+}

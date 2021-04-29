@@ -1,13 +1,13 @@
 .header__phone {
   position: relative;
-  padding-left: 50px;
+  width: 226px;
 
   &::before {
     content: "";
     display: block;
     position: absolute;
-    top: 30px;
-    right: 10px;
+    top: 3px;
+    right: 170px;
     width: 30px;
     height: 30px;
     background-image: url("../img/phone.svg");
@@ -19,4 +19,14 @@
   .header__phone {
     display: none;
   }
+}
+
+.phone__link {
+  @include link();
+  @include fonts(18px, 32px);
+  display: block;
+  color: $dark;
+  padding-left: 30px;
+  box-sizing: border-box;
+  text-align: right;
 }

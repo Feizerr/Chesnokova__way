@@ -6,42 +6,41 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Туристическое агентство Way</title>
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style-min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
   <header>
-    <section class='header'>
-      <svg class="header__logo" width="57" height="22">
-        <use xlink:href="img/sprite.svg#way" x="0" y="0"></use>
-      </svg>
-      <div class="header__data-container">
-        <nav class="header__navigation navigation navigation-closed navigation-nojs">
-          <button class="navigation__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">О путешествии</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Цены</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__phone phone">
-          <svg class="phone__icon"></svg>
-          <a class="phone__link" href="tel:+749978468446"> +7 (499) -784-684-46</a>
-        </div>
+    <section class="header">
+      <a class="header__logo" href="#">
+        <svg class="header__logo-link" width="57" height="22">
+          <use xlink:href="img/sprite_auto.svg#logo" x="0" y="0"></use>
+        </svg>
+      </a>
+      <button class="header__toggle visually-hidden" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="header__navigation navigation navigation-closed navigation-nojs">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">О путешествии</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Цены</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__phone phone">
+        <a class="phone__link" href="tel:+749978468446"> +7 (499) -784-684-46</a>
       </div>
     </section>
   </header>
 
   <main>
-
   </main>
 
   <footer>
 
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

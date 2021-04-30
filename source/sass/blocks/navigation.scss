@@ -2,6 +2,24 @@
   position: relative;
 }
 
+@media (max-width: $tablet-width) {
+  .navigation {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .navigation-nojs {
+    display: block;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .navigation__show {
+    display: block;
+  }
+}
+
 .navigation__list {
   display: flex;
   flex-wrap: wrap;

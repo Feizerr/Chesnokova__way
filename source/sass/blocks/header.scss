@@ -55,14 +55,14 @@
   }
 }
 
-.header__toggle--closed {
+.header__toggle-closed {
   &::before {
     display: none;
   }
 }
 
 @media (max-width: $tablet-width) {
-  .header__toggle--closed {
+  .header__toggle-closed {
     position: absolute;
     top: 0;
     right: 0;

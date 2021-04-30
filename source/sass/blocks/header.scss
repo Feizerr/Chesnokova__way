@@ -78,3 +78,11 @@
     background-position: 50% 50%;
   }
 }
+
+.header__phone:hover a {
+  color: $pink;
+}
+
+.header__phone:hover svg {
+  color: $pink;
+}

@@ -1,18 +1,6 @@
-.header__phone {
-  position: relative;
+.phone {
   width: 226px;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 3px;
-    right: 170px;
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/phone.svg");
-    background-repeat: no-repeat;
-  }
+  display: flex;
 }
 
 @media (max-width: $tablet-width) {
@@ -26,7 +14,13 @@
   @include fonts(18px, 32px);
   display: block;
   color: $dark;
-  padding-left: 30px;
   box-sizing: border-box;
   text-align: right;
 }
+
+.phone__svg {
+  color: $dark;
+  fill: none;
+  margin-right: 11px;
+}
+

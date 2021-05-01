@@ -21,8 +21,8 @@
 .footer__title {
   @include offset(0, 0);
   @include fonts(18px, 32px);
-  margin-bottom: 20px;
   @include Montserrat(600);
+  margin-bottom: 20px;
   text-align: left;
 }
 

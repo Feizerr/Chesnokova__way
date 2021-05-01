@@ -1,0 +1,12 @@
+.button {
+  @include link();
+  @include Montserrat(700);
+  @include fonts(12px, 14.63px);
+  color: $white;
+  text-transform: uppercase;
+  background-color: $pink;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}

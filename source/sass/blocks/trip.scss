@@ -5,7 +5,7 @@
 
 @media (max-width: $tablet-width) {
   .trip {
-   width: 54%;
+    width: 54%;
     margin-bottom: 30px;
   }
 }
@@ -55,7 +55,7 @@
   }
 }
 
-.trip__item a{
+.trip__item a {
   @include link();
   @include fonts(14px, 23px);
   color: rgba($dark, 0.5);

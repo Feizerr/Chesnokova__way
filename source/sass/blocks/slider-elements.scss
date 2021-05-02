@@ -1,0 +1,119 @@
+.slider-elements {
+  @include list-reset();
+}
+
+.slider-elements__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.slider-elements__container {
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: $tablet-width) {
+  .slider-elements__container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    // align-items: center;
+  }
+}
+
+.slider-elements__description-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 3.7%;
+  width: 36.5%;
+}
+
+@media (max-width: $tablet-width) {
+  .slider-elements__description-container {
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .slider-elements__description-container {
+    width: 86%;
+  }
+}
+
+.slider-elements__title {
+  @include offset(0, 0);
+  @include fonts(55px, 90px);
+  @include Montserrat(600);
+  margin-bottom: 53px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-position: 0 0;
+    background-color: $pink;
+    width: 175px;
+    height: 2px;
+    left: 0;
+    bottom: -10px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .slider-elements__title {
+    @include fonts(30px, 45px);
+    margin-bottom: 20px;
+  }
+
+  .slider-elements__title::after {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .slider-elements__title {
+    @include fonts(24px, 36px);
+  }
+}
+
+.slider-elements__text {
+  @include offset(0, 0);
+  @include fonts(16px, 28px);
+  @include Montserrat(400);
+  color: rgba($dark, 0.7);
+  margin-bottom: 17px;
+}
+
+@media (max-width: $tablet-width) {
+  .slider-elements__text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.slider-elements__button {
+  width: 250px;
+  padding: 30px 20px;
+  border: none;
+}
+
+@media (max-width: $tablet-width) {
+  .slider-elements__button {
+    padding: 19px 20px;
+    letter-spacing: 2px;
+    margin-bottom: 49px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .slider-elements__button {
+    @include fonts(10px, 12px);
+    width: 100%;
+    margin-bottom: 49px;
+  }
+}

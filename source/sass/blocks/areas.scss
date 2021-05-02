@@ -128,7 +128,6 @@
   .areas__item {
     width: 47%;
     max-height: none;
-
   }
 
   .areas__item:nth-child(odd) {
@@ -144,9 +143,8 @@
   }
 }
 
-
 .areas__item-greece {
-  background-image: url('../img/greece-desktop.jpg');
+  background-image: url("../img/greece-desktop.jpg");
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/greece-desktop@2x.jpg");
@@ -155,8 +153,7 @@
 
 @media (max-width: $tablet-width) {
   .areas__item-greece {
-    background-image: url('../img/greece-tablet.jpg');
-
+    background-image: url("../img/greece-tablet.jpg");
   }
 }
 
@@ -168,8 +165,7 @@
 
 @media (max-width: $mobile-width) {
   .areas__item-greece {
-    background-image: url('../img/greece-mobile.jpg');
-
+    background-image: url("../img/greece-mobile.jpg");
   }
 }
 
@@ -180,7 +176,7 @@
 }
 
 .areas__item-albania {
-  background-image: url('../img/albania-desktop.jpg');
+  background-image: url("../img/albania-desktop.jpg");
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/albania-desktop@2x.jpg");
@@ -189,8 +185,7 @@
 
 @media (max-width: $tablet-width) {
   .areas__item-albania {
-    background-image: url('../img/albania-tablet.jpg');
-
+    background-image: url("../img/albania-tablet.jpg");
   }
 }
 
@@ -202,8 +197,7 @@
 
 @media (max-width: $mobile-width) {
   .areas__item-albania {
-    background-image: url('../img/albania-mobile.jpg');
-
+    background-image: url("../img/albania-mobile.jpg");
   }
 }
 
@@ -214,7 +208,7 @@
 }
 
 .areas__item-makedonia {
-  background-image: url('../img/makedonia-desktop.jpg');
+  background-image: url("../img/makedonia-desktop.jpg");
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/makedonia-desktop@2x.jpg");
@@ -223,8 +217,7 @@
 
 @media (max-width: $tablet-width) {
   .areas__item-makedonia {
-    background-image: url('../img/makedonia-tablet.jpg');
-
+    background-image: url("../img/makedonia-tablet.jpg");
   }
 }
 
@@ -236,8 +229,7 @@
 
 @media (max-width: $mobile-width) {
   .areas__item-makedonia {
-    background-image: url('../img/makedonia-mobile.jpg');
-
+    background-image: url("../img/makedonia-mobile.jpg");
   }
 }
 
@@ -248,7 +240,7 @@
 }
 
 .areas__item-montenegro {
-  background-image: url('../img/montenegro-desktop.jpg');
+  background-image: url("../img/montenegro-desktop.jpg");
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/montenegro-desktop@2x.jpg");
@@ -257,8 +249,7 @@
 
 @media (max-width: $tablet-width) {
   .areas__item-montenegro {
-    background-image: url('../img/montenegro-tablet.jpg');
-
+    background-image: url("../img/montenegro-tablet.jpg");
   }
 }
 
@@ -270,8 +261,7 @@
 
 @media (max-width: $mobile-width) {
   .areas__item-montenegro {
-    background-image: url('../img/montenegro-mobile.jpg');
-
+    background-image: url("../img/montenegro-mobile.jpg");
   }
 }
 
@@ -282,7 +272,7 @@
 }
 
 .areas__item-croatia {
-  background-image: url('../img/croatia-desktop.jpg');
+  background-image: url("../img/croatia-desktop.jpg");
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/croatia-desktop@2x.jpg");
@@ -291,8 +281,7 @@
 
 @media (max-width: $tablet-width) {
   .areas__item-croatia {
-    background-image: url('../img/croatia-tablet.jpg');
-
+    background-image: url("../img/croatia-tablet.jpg");
   }
 }
 
@@ -304,8 +293,7 @@
 
 @media (max-width: $mobile-width) {
   .areas__item-croatia {
-    background-image: url('../img/croatia-mobile.jpg');
-
+    background-image: url("../img/croatia-mobile.jpg");
   }
 }
 

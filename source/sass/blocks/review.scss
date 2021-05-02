@@ -1,0 +1,122 @@
+.rewiew {
+  position: relative;
+  flex-grow: 1;
+}
+
+@media (max-width: $mobile-width) {
+  .review {
+    width: auto;
+  }
+}
+
+.rewiew__title {
+  @include Montserrat(500);
+  @include fonts(30px, 36px);
+  @include offset(0, 0);
+  margin-bottom: 63px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-position: 0 0;
+    background-color: $pink;
+    width: 68px;
+    height: 1px;
+    left: 0;
+    bottom: -10px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .rewiew__title {
+    margin-bottom: 32px;
+
+    &::after {
+      bottom: -10px;
+    }
+  }
+}
+
+.rewiew__blockquote {
+  @include offset(0, 0);
+}
+
+.rewiew__opinion {
+  @include offset(0, 0);
+  @include fonts(14px, 28px);
+  color: rgba($dark, 0.7);
+  margin-bottom: 35px;
+}
+
+.rewiew_img-author {
+  display: block;
+  margin: 0;
+  margin-right: 16px;
+}
+
+.rewiew__author {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rewiew__author-name {
+  @include offset(0, 0);
+  @include Montserrat(500);
+  @include fonts(16px, 19px);
+  font-style: normal;
+}
+
+.review__wrapper {
+  background-color: $white;
+  width: 382px;
+  padding: 30px 36px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 119px;
+  left: 73.9%;
+}
+
+@media (max-width: $tablet-width) {
+  .review__wrapper {
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 30px);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .review__wrapper {
+    width: 268px;
+    padding: 30px 20px 34px;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 30px);
+  }
+}
+
+.review__picture {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: $tablet-width) {
+  .review__picture {
+    height: 415px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .review__picture {
+    object-fit: cover;
+    width: 100%;
+    height: 415px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .rewiew__picture-wrapper {
+    width: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+.buy-tour {
+  width: 62%;
+  margin: 0 auto;
+  padding-bottom: 240px;
+}
+
+@media (max-width: $tablet-width) {
+  .buy-tour {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .buy-tour {
+    padding-bottom: 45px;
+  }
+}
+
+.buy-tour__list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 95px;
+}
+
+@media (max-width: $tablet-width) {
+  .buy-tour__list {
+    padding-left: 37px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .buy-tour__list {
+    margin-bottom: 24px;
+  }
+}

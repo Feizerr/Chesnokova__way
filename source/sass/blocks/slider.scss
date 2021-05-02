@@ -1,0 +1,31 @@
+.slider__item {
+  padding-right: 99px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba($dark, 0.3);
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .slider__item {
+    justify-content: center;
+
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+.slider__link {
+  @include link();
+  @include Montserrat(500);
+  @include fonts(20px, 24.38px);
+  color: rgba($dark, 0.3);
+  padding-bottom: 15px;
+
+  &--active {
+    color: $pink;
+  }
+}

@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   height: 860px;
   position: relative;
+  margin-bottom: 199px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/main-background-desktop@2x.jpg");
@@ -28,7 +29,7 @@
   .promo {
     height: auto;
     background-image: none;
-    padding-bottom: 108px;
+    margin-bottom: 108px;
   }
 }
 
@@ -156,7 +157,7 @@
 @media (max-width: $mobile-width) {
   .promo__button {
     padding: 19px 145px 19px 40px;
-    max-width: 288px;
+    max-width: 90%;
     margin: 0 auto;
 
     &::after {

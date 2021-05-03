@@ -1,0 +1,53 @@
+.modal {
+  width: 728px;
+  height: 444px;
+  background-color: $light;
+  position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+@media (max-width: $mobile-width) {
+  .modal {
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
+
+.modal__input:invalid {
+  outline-color: $pink;
+}
+
+.modal__close {
+	position: absolute;
+	top: 15px;
+	right: 12px;
+	width: 22px;
+	height: 22px;
+	border: 0;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.modal__close::before,
+.modal__close::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 0px;
+	width: 26px;
+	height: 2px;
+	background-color: rgba($dark, 0.2);
+}
+
+.modal__close::before {
+	transform: rotate(45deg);
+}
+
+.modal__close::after {
+	transform: rotate(-45deg);
+}

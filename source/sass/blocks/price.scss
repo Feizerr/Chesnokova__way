@@ -11,6 +11,13 @@
     width: 90%;
     flex-direction: column;
     text-align: center;
+    padding-bottom: 125px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .price {
+    padding-bottom: 30px;
   }
 }
 
@@ -246,6 +253,7 @@
 @media (max-width: $mobile-width) {
   .price__title {
     @include fonts(24px, 36px);
+    width: 90%;
     padding-top: 0;
   }
 }
@@ -262,6 +270,7 @@
   .price__description {
     margin-bottom: 30px;
     text-align: center;
+    width: 90%;
   }
 }
 

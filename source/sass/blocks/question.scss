@@ -1,0 +1,141 @@
+.question {
+  width: 61%;
+  max-width: 1362px;
+  margin: 0 auto;
+  margin-bottom: 170px;
+  min-height: 455px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 844px 455px;
+  background-image: url("../img/question-background-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/question-background-desktop@2x.jpg");
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .question {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url("../img/question-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/question-background-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .question {
+    width: 90%;
+    background-image: none;
+    background-color: $light;
+  }
+}
+
+.question__wrapper {
+  width: 656px;
+  padding: 50px 28px;
+  box-sizing: border-box;
+  background-color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  direction: column;
+  justify-content: center
+}
+
+@media (max-width: $tablet-width) {
+  .question__wrapper {
+    width: 658px;
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .question__wrapper {
+    background-color: $light;
+    padding: 50px 0;
+  }
+}
+
+.question__title {
+  @include offset(0, 0);
+  @include Montserrat(600);
+  @include fonts(25px, 32px);
+  width: 90%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.question__text {
+  @include offset(0, 0);
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: $mobile-width) {
+  .question__text {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .question__form {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.question__input {
+  width: 267px;
+  min-height: 50px;
+  margin-bottom: 25px;
+  border: none;
+  outline: 1px solid rgba($dark, 0.3);
+}
+
+@media (max-width: $tablet-width) {
+  .question__wrapper {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .question__input {
+    width: 100%;
+  }
+}
+
+.question__input::placeholder {
+  @include fonts(14px, 17px);
+  color: $dark;
+  padding-left: 15px;
+}
+
+.question__tel {
+  margin-right: 19px;
+}
+
+.question__button {
+  border: none;
+  margin: 0 auto;
+  width: 176px;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  text-align: center;
+}
+
+@media (max-width: $mobile-width) {
+  .question__button {
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,102 @@
+.modal-tour {
+  background-image: url("../img/popup.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 338px 444px;
+  padding-top: 72px;
+  padding-left: 397px;
+  padding-right: 61px;
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .modal-tour {
+    background-image: none;
+    background-color: $white;
+    padding: 100px 0 0 0;
+    margin: auto;
+  }
+}
+
+.modal-tour--active {
+  display: block;
+}
+
+.modal-tour__title {
+  @include offset(0, 0);
+  @include Montserrat(600);
+  @include fonts(25px, 42px);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.modal-tour__form {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "*";
+    font-size: 20px;
+    background-position: 0 0;
+    color: $pink;
+    top: 5px;
+    left: 10px;
+    width: 5px;
+    height: 5px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .modal-tour__form {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 185px;
+    background-color: $white;
+  }
+}
+
+.modal-tour__input {
+  width: 270px;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: none;
+  outline: 1px solid $light-grey;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .modal-tour__input {
+    width:100%;
+  }
+}
+
+.modal-tour__button {
+  border: none;
+  width: 176px;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
+@media (max-width: $mobile-width) {
+  .modal-tour__button {
+    width:100%;
+  }
+}
+
+.modal-tour__input::placeholder {
+  @include fonts(14px, 17px);
+  @include Montserrat(400);
+}
+
+.modal-tour__phone-popup::placeholder {
+  padding-left: 26px;
+}
+
+.modal-tour__mail::placeholder {
+  padding-left: 15px;
+}

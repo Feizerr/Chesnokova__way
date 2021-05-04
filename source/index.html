@@ -103,21 +103,21 @@
     <section class="buy-tour" id="area">
       <h2 class="visually-hidden">Выбор тура</h2>
       <div class="buy-tour__wrapper">
-        <div class="slider">
-          <ul class="buy-tour__list slider slider__container" draggable="true">
-            <li class="slider__item">
+        <div class="slider swiper-container">
+          <ul class="buy-tour__list slider slider__container swiper-wrapper" draggable="true">
+            <li class="slider__item swiper-slide">
               <a class="slider__link slider__link--active" href="#">Греция</a>
             </li>
-            <li class="slider__item">
+            <li class="slider__item swiper-slide">
               <a class="slider__link" href="#">Албания</a>
             </li>
-            <li class="slider__item">
+            <li class="slider__item swiper-slide">
               <a class="slider__link" href="#">Македония</a>
             </li>
-            <li class="slider__item">
+            <li class="slider__item swiper-slide">
               <a class="slider__link" href="#">Черногория</a>
             </li>
-            <li class="slider__item">
+            <li class="slider__item swiper-slide">
               <a class="slider__link" href="#">Хорватия</a>
             </li>
           </ul>
@@ -518,12 +518,16 @@
   <section class="modal modal-tour">
     <h2 class="modal-tour__title"> Купить тур</h2>
     <form class="form modal-tour__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-      <label class="visually-hidden" for="tel-popup">Поле для ввода номера телефона</label>
-      <span class="form__error form__error-popup-phone">Данные не верны</span>
-      <input class="form__input modal__input modal-tour__input modal-tour__phone-popup" type="tel" id="tel-popup" name="phone-popup" placeholder="+7  Введите 10 цифр телефона" required>
-      <label class="visually-hidden" for="mail-popup">Поле для ввода e-mail:</label>
-      <span class="form__error form__error-popup-mail">Данные не верны</span>
-      <input class="form__input modal__input modal-tour__input modal-tour__mail" type="email" id="mail-popup" name="mail-popup" placeholder="E-mail">
+      <div class="form__wrapper form__wrapper-phone">
+        <label class="visually-hidden form__label-phone" for="tel-popup">Поле для ввода номера телефона</label>
+        <span class="form__error form__error-popup-phone">Данные не верны</span>
+        <input class="form__input modal__input modal-tour__input modal-tour__phone-popup" type="tel" id="tel-popup" name="phone-popup" placeholder="+7  Введите 10 цифр телефона" required>
+      </div>
+      <div class="form__wrapper">
+        <label class="visually-hidden form__label-mail" for="mail-popup">Поле для ввода e-mail:</label>
+        <span class="form__error form__error-popup-mail">Данные не верны</span>
+        <input class="form__input modal__input modal-tour__input modal-tour__mail" type="email" id="mail-popup" name="mail-popup" placeholder="E-mail">
+      </div>
       <button class="form__button button modal-tour__button" type="submit" value="Отправить">Отправить</button>
     </form>
     <button type="button" class="modal__close" aria-label="Закрыть"></button>

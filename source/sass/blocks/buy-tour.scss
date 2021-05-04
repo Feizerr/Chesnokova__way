@@ -29,8 +29,8 @@
 @media (max-width: $tablet-width) {
   .buy-tour__list {
     padding-left: 37px;
-    // flex-wrap: nowrap;
-    // width: 950px;
+    flex-wrap: nowrap;
+    max-width: 100%;
   }
 }
 

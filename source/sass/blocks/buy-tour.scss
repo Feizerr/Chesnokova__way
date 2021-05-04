@@ -18,15 +18,19 @@
 }
 
 .buy-tour__list {
+  @include offset(0, 0);
   @include list-reset();
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 95px;
+  width: 77%;
+  border-bottom: 1px solid rgba($dark, 0.3);
 }
 
 @media (max-width: $tablet-width) {
   .buy-tour__list {
     padding-left: 37px;
+    // flex-wrap: nowrap;
+    // width: 950px;
   }
 }
 

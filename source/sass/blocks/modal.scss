@@ -51,3 +51,7 @@
 .modal__close::after {
 	transform: rotate(-45deg);
 }
+
+.modal-active {
+  display: block;
+}

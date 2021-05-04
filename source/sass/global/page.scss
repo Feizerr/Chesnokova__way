@@ -12,19 +12,28 @@
   font-size: 16px;
   line-height: 28px;
   box-sizing: border-box;
+  background-image: url("../img/matherics.png");
+  background-position: center 2469px;
+  background-repeat: no-repeat;
+  background-size: 75% auto;
 
   @include offset(0, 0);
   margin: 0 auto;
 }
-
-@media (max-width: $mobile-width) {
-  .page__body {
-    max-width: 767px;
+@media (max-width: $tablet-width) {
+  .page {
+    background-image: none;
   }
 }
 
 @media (max-width: $tablet-width) {
   .page__body {
     max-width: 1023px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page__body {
+    max-width: 767px;
   }
 }

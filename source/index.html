@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Туристическое агентство Way</title>
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
@@ -102,23 +103,25 @@
     <section class="buy-tour" id="area">
       <h2 class="visually-hidden">Выбор тура</h2>
       <div class="buy-tour__wrapper">
-        <ul class="buy-tour__list slider">
-          <li class="slider__item">
-            <a class="slider__link slider__link--active" href="#">Греция</a>
-          </li>
-          <li class="slider__item">
-            <a class="slider__link" href="#">Албания</a>
-          </li>
-          <li class="slider__item">
-            <a class="slider__link" href="#">Македония</a>
-          </li>
-          <li class="slider__item">
-            <a class="slider__link" href="#">Черногория</a>
-          </li>
-          <li class="slider__item">
-            <a class="slider__link" href="#">Хорватия</a>
-          </li>
-        </ul>
+        <div class="slider">
+          <ul class="buy-tour__list slider slider__container" draggable="true">
+            <li class="slider__item">
+              <a class="slider__link slider__link--active" href="#">Греция</a>
+            </li>
+            <li class="slider__item">
+              <a class="slider__link" href="#">Албания</a>
+            </li>
+            <li class="slider__item">
+              <a class="slider__link" href="#">Македония</a>
+            </li>
+            <li class="slider__item">
+              <a class="slider__link" href="#">Черногория</a>
+            </li>
+            <li class="slider__item">
+              <a class="slider__link" href="#">Хорватия</a>
+            </li>
+          </ul>
+        </div>
         <ul class="slider-elements">
           <li class="slider-elements__item slider-elements__item--active" id="greece">
             <div class="slider-elements__container">
@@ -127,7 +130,7 @@
                 <p class="slider-elements__text">
                   На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
                 </p>
-                <a class="button slider-elements__button" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
+                <a class="button slider-elements__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
               </div>
               <div class="slider-elements__review rewiew">
                 <div class="rewiew__picture-wrapper">
@@ -163,7 +166,7 @@
                 <p class="slider-elements__text">
                   В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
                 </p>
-                <a class="button slider-elements__button" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
+                <a class="button slider-elements__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
               </div>
               <div class="slider-elements__review rewiew">
                 <div class="rewiew__picture-wrapper">
@@ -201,7 +204,7 @@
                 <p class="slider-elements__text">
                   В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.
                 </p>
-                <a class="button slider-elements__button" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
+                <a class="button slider-elements__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
               </div>
               <div class="slider-elements__review rewiew">
                 <div class="rewiew__picture-wrapper">
@@ -240,7 +243,7 @@
                 <p class="slider-elements__text">
                   Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
                 </p>
-                <a class="button slider-elements__button" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
+                <a class="button slider-elements__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
               </div>
               <div class="slider-elements__review rewiew">
                 <div class="rewiew__picture-wrapper">
@@ -278,7 +281,7 @@
               <p class="slider-elements__text">
                 В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.
               </p>
-              <a class="button slider-elements__button" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
+              <a class="button slider-elements__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
               </div>
               <div class="slider-elements__review rewiew">
                 <div class="rewiew__picture-wrapper">
@@ -348,7 +351,7 @@
               Экскурсии по удивительно красивым местам Европы
             </li>
           </ul>
-          <a class="button price__button" aria-label="Заказать тур">купить тур сейчас</a>
+          <a class="button price__button button-buy" aria-label="Заказать тур">купить тур сейчас</a>
         </li>
         <li class="price__item">
           <div class="price__container">
@@ -390,7 +393,7 @@
               Экскурсии по удивительно красивым местам Европы
             </li>
           </ul>
-          <a class="button price__button" aria-label="Заказать тур">купить тур сейчас</a>
+          <a class="button price__button button-buy" aria-label="Заказать тур">купить тур сейчас</a>
         </li>
       </ul>
       <div class="price__wrapper">
@@ -413,12 +416,14 @@
       <div class="question__wrapper">
         <h2 class="question__title">У Вас остались вопросы?</h2>
         <p class="question__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-        <form class="question__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-          <label class="visually-hidden" for="tel-field">Введите ваш номер:</label>
-					<input class="question__input question__tel" type="tel" id="tel-field" name="tel" placeholder="+7 Введите 10 цифр номера">
+        <form class="question__form form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+          <span class="form__error form__error-phone">Данные не верны</span>
+          <label class="question__label visually-hidden" for="tel-field">Введите ваш номер:</label>
+					<input class="form__input form__tel" type="tel" id="tel-field" name="tel" placeholder="+7 Введите 10 цифр номера">
           <label class="visually-hidden" for="mail-field">Введите ваш e-mail:</label>
-					<input class="question__input question__mail" type="email" id="mail-field" name="mail" placeholder="E-mail">
-          <button class="button question__button" type="submit" aria-label="Получить помощь">Отправить</button>
+          <span class="form__error form__error-mail">Данные не верны</span>
+					<input class="form__input form__mail" type="email" id="mail-field" name="mail" placeholder="E-mail">
+          <button class="button form__button" type="submit" aria-label="Получить помощь">Отправить</button>
         </form>
       </div>
     </section>
@@ -512,12 +517,14 @@
 
   <section class="modal modal-tour">
     <h2 class="modal-tour__title"> Купить тур</h2>
-    <form class="modal-tour__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+    <form class="form modal-tour__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
       <label class="visually-hidden" for="tel-popup">Поле для ввода номера телефона</label>
-      <input class="modal__input modal-tour__input modal-tour__phone-popup" type="tel" id="tel-popup" name="phone-popup" placeholder="+7  Введите 10 цифр телефона" required>
+      <span class="form__error form__error-popup-phone">Данные не верны</span>
+      <input class="form__input modal__input modal-tour__input modal-tour__phone-popup" type="tel" id="tel-popup" name="phone-popup" placeholder="+7  Введите 10 цифр телефона" required>
       <label class="visually-hidden" for="mail-popup">Поле для ввода e-mail:</label>
-      <input class="modal__input modal-tour__input modal-tour__mail" type="email" id="mail-popup" name="mail-popup" placeholder="E-mail">
-      <button class="button modal-tour__button" type="submit" value="Отправить">Отправить</button>
+      <span class="form__error form__error-popup-mail">Данные не верны</span>
+      <input class="form__input modal__input modal-tour__input modal-tour__mail" type="email" id="mail-popup" name="mail-popup" placeholder="E-mail">
+      <button class="form__button button modal-tour__button" type="submit" value="Отправить">Отправить</button>
     </form>
     <button type="button" class="modal__close" aria-label="Закрыть"></button>
   </section>
@@ -529,8 +536,7 @@
     </p>
     <button type="button" class="modal__close" aria-label="Закрыть"></button>
   </section>
-
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

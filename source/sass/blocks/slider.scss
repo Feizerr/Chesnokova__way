@@ -1,7 +1,6 @@
 .slider__item {
   padding-right: 99px;
   padding-bottom: 15px;
-  border-bottom: 1px solid rgba($dark, 0.3);
 
   &:last-child {
     padding-right: 0;
@@ -11,10 +10,8 @@
 @media (max-width: $tablet-width) {
   .slider__item {
     justify-content: center;
-
-    &:last-child {
-      display: none;
-    }
+    padding-right: 0;
+    margin-right: 11%;
   }
 }
 

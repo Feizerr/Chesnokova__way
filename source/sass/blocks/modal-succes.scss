@@ -1,0 +1,32 @@
+.modal-succes {
+  display: none;
+ }
+
+@media (max-width: $mobile-width) {
+  .modal-succes {
+   max-width: 100%;
+   padding: 100px 40px;
+   height: max-content;
+  }
+}
+
+.modal-succes__text {
+  @include Montserrat(500);
+  @include fonts(25px, 42px)
+  margin: 0 auto;
+  text-align: center;
+  max-width: 399px;
+  padding-top: 179px;
+}
+
+@media (max-width: $mobile-width) {
+  .modal-succes__text {
+    @include fonts(16px, 24px)
+    max-width: 100%;
+    padding-top: 0;
+  }
+}
+
+.modal-succes-active {
+  display: block;
+}

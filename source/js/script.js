@@ -15,7 +15,26 @@ headerToggle.addEventListener("click", function () {
 });
 
 //Swipe
-const swiper = new Swiper(".slider");
+jQuery(document).ready(function($) {
+  var alterClass = function() {
+    var ww = document.body.clientWidth;
+    if (ww > 1024) {
+      $('.slider').removeClass('swiper-container');
+      $('.buy-tour__list').removeClass('swiper-wrapper');
+      $('.slider__item').removeClass('swiper-slide');
+
+    } else if (ww <= 1023) {
+      $('.slider').addClass('swiper-container');
+      $('.buy-tour__list').addClass('swiper-wrapper');
+      $('.slider__item').addClass('swiper-slide');
+      const swiper = new Swiper(".swiper-container");
+    };
+  };
+  $(window).resize(function(){
+    alterClass();
+  });
+  alterClass();
+});
 
 
 //Popup

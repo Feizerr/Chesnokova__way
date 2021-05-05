@@ -2,6 +2,7 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/page.scss";
+@import "blocks/swipe.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/header.scss";
 @import "blocks/navigation.scss";
@@ -20,7 +21,6 @@
 @import "blocks/price.scss";
 @import "blocks/question.scss";
 @import "blocks/form.scss";
-
 @import "blocks/modal-tour.scss";
 @import "blocks/modal-succes.scss";
 @import "blocks/modal.scss";

@@ -1,5 +1,5 @@
 .corporate-trip {
-  max-width: 32%;
+  max-width: 31%;
   padding-left: 43px;
   box-sizing: border-box;
 }
@@ -22,6 +22,10 @@
   }
 }
 
+.corporate-trip__title {
+  margin-bottom: 22px;
+}
+
 @media (max-width: $tablet-width) {
   .corporate-trip__title {
     text-align: center;
@@ -30,7 +34,7 @@
 
 .corporate-trip__text {
   @include offset(0, 0);
-  @include fonts(14px, 23px);
+  @include fonts(14px, 24px);
   color: rgba($dark, 0.5);
-  padding: 0 16px 25px 16px;
+  // padding: 0 16px 25px 16px;
 }

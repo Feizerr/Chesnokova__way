@@ -61,7 +61,6 @@
 
 .contacts__link {
   @include link();
-  @include Montserrat(400);
   color: $pink;
   text-decoration: underline;
 }

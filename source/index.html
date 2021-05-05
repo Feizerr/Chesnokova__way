@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Туристическое агентство Way</title>
-  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -46,7 +46,7 @@
         <h2 class="promo__title">Путешествие по Европе</h2>
       </div>
       <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-      <a class="button promo__button" href="#" aria-label="Посмотреть подробнее о туристических направлениях">
+      <a class="button promo__button" href="#area" aria-label="Посмотреть подробнее о туристических направлениях">
         Смотреть тур
       </a>
     </section>
@@ -100,11 +100,10 @@
         </ul>
       </div>
     </section>
-    <section class="buy-tour" id="area">
-      <h2 class="visually-hidden">Выбор тура</h2>
-      <div class="buy-tour__wrapper">
+    <section class="countries" id="area">
+      <div class="countries__wrapper">
         <div class="slider">
-          <ul class="buy-tour__list slider slider__container" draggable="true">
+          <ul class="countries__list slider__list slider__container" draggable="true">
             <li class="slider__item">
               <a class="slider__link slider__link--active" href="#">Греция</a>
             </li>
@@ -122,54 +121,54 @@
             </li>
           </ul>
         </div>
-        <ul class="slider-elements">
-          <li class="slider-elements__item slider-elements__item--active" id="greece">
-            <div class="slider-elements__container">
-              <div class="slider-elements__description-container">
-                <h3 class="slider-elements__title">Греция</h3>
-                <p class="slider-elements__text">
+        <ul class="countries__elements-list">
+          <li class="countries__item countries__item--active" id="greece">
+            <div class="countries__container">
+              <div class="countries__description-container">
+                <h2 class="countries__title">Греция</h2>
+                <p class="countries__text">
                   На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
                 </p>
-                <a class="button slider-elements__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
+                <a class="button countries__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
               </div>
-              <div class="slider-elements__review rewiew">
-                <div class="rewiew__picture-wrapper">
+              <div class="countries__review review">
+                <div class="review__picture-wrapper">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/review-greece-mobile.webp 1x, img/review-greece-mobile@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 1023px)" srcset="img/review-greece-tablet.webp 1x, img/review-greece-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="img/review-greece-desktop.webp 1x, img/review-greece-desktop@2x.webp 2x">
                       <source media="(max-width: 767px)" srcset="img/review-greece-mobile.jpg 1x, img/review-greece-mobile@2x.jpg 2x">
                       <source media="(max-width: 1023px)" srcset="img/review-greece-tablet.jpg 1x, img/review-greece-tablet@2x.jpg 2x">
-                      <img class="review__picture" src="img/review-greece-desktop.jpg" srcset="img/review-greece-desktop@2x.jpg 2x" width="427px" height="596" alt="Скалы Метеоры в Греции">
+                      <img class="review__picture" src="img/review-greece-desktop.jpg" srcset="img/review-greece-desktop@2x.jpg 2x" width="427" height="596" alt="Скалы Метеоры в Греции">
                   </picture>
                   </div>
                 <div class="review__wrapper">
-                  <h3 class="rewiew__title">Отзывы</h3>
-                  <blockquote class="rewiew__blockquote">
-                    <p class="rewiew__opinion">Метеоры в Греции можно сравнить разве что с&nbsp;Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
-                    <cite class="rewiew__author">
+                  <h3 class="review__title">Отзывы</h3>
+                  <blockquote class="review__blockquote">
+                    <p class="review__opinion">Метеоры в Греции можно сравнить разве что с&nbsp;Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
+                    <cite class="review__author">
                       <picture>
                         <source type="image/webp" srcset="img/vlada-mobile.webp 1x, img/vlada-mobile@2x.webp 2x">
-                        <img class="rewiew_img-author" src="img/vlada-mobile.jpg" srcset="img/vlada-mobile@2x.jpg 2x" width="37" height="38" alt="Фото Влады Голициной">
+                        <img class="review__img-author" src="img/vlada-mobile.jpg" srcset="img/vlada-mobile@2x.jpg 2x" width="37" height="38" alt="Фото Влады Голициной">
                     </picture>
-                    <p class="rewiew__author-name">Влада Голицина</p>
+                    <span class="review__author-name">Влада Голицина</span>
                   </cite>
                   </blockquote>
                 </div>
               </div>
             </div>
           </li>
-          <li class="slider-elements__item" id="albania">
-            <div class="slider-elements__container">
-              <div class="slider-elements__description-container">
-                <h3 class="slider-elements__title">Албания</h3>
-                <p class="slider-elements__text">
+          <li class="countries__item" id="albania">
+            <div class="countries__container">
+              <div class="countries__description-container">
+                <h3 class="countries__title">Албания</h3>
+                <p class="countries__text">
                   В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
                 </p>
-                <a class="button slider-elements__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
+                <a class="button countries__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
               </div>
-              <div class="slider-elements__review rewiew">
-                <div class="rewiew__picture-wrapper">
+              <div class="countries__review review">
+                <div class="review__picture-wrapper">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/review-albania-mobile.webp 1x, img/review-albania-mobile@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 1023px)" srcset="img/review-albania-tablet.webp 1x, img/review-albania-tablet@2x.webp 2x">
@@ -180,34 +179,34 @@
                   </picture>
                   </div>
                 <div class="review__wrapper">
-                  <h3 class="rewiew__title">Отзывы</h3>
-                  <blockquote class="rewiew__blockquote">
-                    <p class="rewiew__opinion">
+                  <h3 class="review__title">Отзывы</h3>
+                  <blockquote class="review__blockquote">
+                    <p class="review__opinion">
                       Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)
                     </p>
-                    <cite class="rewiew__author">
+                    <cite class="review__author">
                       <picture>
                         <source type="image/webp" srcset="img/marina.webp 1x, img/marina@2x.webp 2x">
-                        <img class="rewiew_img-author" src="img/marina.jpg" srcset="img/marina@2x.jpg 2x" width="37" height="38" alt="Фото Влады Голициной">
+                        <img class="review__img-author" src="img/marina.jpg" srcset="img/marina@2x.jpg 2x" width="37" height="38" alt="Фото Влады Голициной">
                       </picture>
-                      <p class="rewiew__opinion">Маришка</p>
+                      <span class="review__opinion">Маришка</span>
                   </cite>
                   </blockquote>
                 </div>
               </div>
             </div>
           </li>
-          <li class="slider-elements__item" id="makedonia">
-            <div class="slider-elements__container">
-              <div class="slider-elements__description-container">
-                <h3 class="slider-elements__title">Македония</h3>
-                <p class="slider-elements__text">
+          <li class="countries__item" id="makedonia">
+            <div class="countries__container">
+              <div class="countries__description-container">
+                <h3 class="countries__title">Македония</h3>
+                <p class="countries__text">
                   В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.
                 </p>
-                <a class="button slider-elements__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
+                <a class="button countries__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
               </div>
-              <div class="slider-elements__review rewiew">
-                <div class="rewiew__picture-wrapper">
+              <div class="countries__review review">
+                <div class="review__picture-wrapper">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/review-makedonia-mobile.webp 1x, img/review-makedonia-mobile@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 1023px)" srcset="img/review-makedonia-tablet.webp 1x, img/review-makedonia-tablet@2x.webp 2x">
@@ -219,34 +218,34 @@
                   </picture>
                   </div>
                 <div class="review__wrapper">
-                  <h3 class="rewiew__title">Отзывы</h3>
-                  <blockquote class="rewiew__blockquote">
-                    <p class="rewiew__opinion">
+                  <h3 class="review__title">Отзывы</h3>
+                  <blockquote class="review__blockquote">
+                    <p class="review__opinion">
                       Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.
                     </p>
-                    <cite class="rewiew__author">
+                    <cite class="review__author">
                       <picture>
                         <source type="image/webp" srcset="img/mikhail.webp 1x, img/mikhail@2x.webp 2x">
-                        <img class="rewiew_img-author" src="img/mikhail.jpg" srcset="img/mikhail@2x.jpg 2x" width="37" height="38" alt="Фото Михаила Кузьмина">
+                        <img class="review__img-author" src="img/mikhail.jpg" srcset="img/mikhail@2x.jpg 2x" width="37" height="38" alt="Фото Михаила Кузьмина">
                       </picture>
-                      <p class="rewiew__opinion">Михаил Кузьмин</p>
+                      <span class="review__opinion">Михаил Кузьмин</span>
                   </cite>
                   </blockquote>
                 </div>
               </div>
             </div>
           </li>
-          <li class="slider-elements__item" id="montenegro">
-            <div class="slider-elements__container">
-              <div class="slider-elements__description-container">
-                <h3 class="slider-elements__title">Черногория</h3>
-                <p class="slider-elements__text">
+          <li class="countries__item" id="montenegro">
+            <div class="countries__container">
+              <div class="countries__description-container">
+                <h3 class="countries__title">Черногория</h3>
+                <p class="countries__text">
                   Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
                 </p>
-                <a class="button slider-elements__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
+                <a class="button countries__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
               </div>
-              <div class="slider-elements__review rewiew">
-                <div class="rewiew__picture-wrapper">
+              <div class="countries__review review">
+                <div class="review__picture-wrapper">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/review-montenegro-mobile.webp 1x, img/review-montenegro-mobile@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 1023px)" srcset="img/review-montenegro-tablet.webp 1x, img/review-montenegro-tablet@2x.webp 2x">
@@ -257,34 +256,34 @@
                   </picture>
                   </div>
                 <div class="review__wrapper">
-                  <h3 class="rewiew__title">Отзывы</h3>
-                  <blockquote class="rewiew__blockquote">
-                    <p class="rewiew__opinion">
+                  <h3 class="review__title">Отзывы</h3>
+                  <blockquote class="review__blockquote">
+                    <p class="review__opinion">
                       Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую
                     </p>
-                    <cite class="rewiew__author">
+                    <cite class="review__author">
                       <picture>
                         <source type="image/webp" srcset="img/anastasiia.webp 1x, img/anastasiia@2x.webp 2x">
-                        <img class="rewiew_img-author" src="img/anastasiia.jpg" srcset="img/anastasiia@2x.jpg 2x" width="37" height="38" alt="Фото Анастасии Мей">
+                        <img class="review__img-author" src="img/anastasiia.jpg" srcset="img/anastasiia@2x.jpg 2x" width="37" height="38" alt="Фото Анастасии Мей">
                       </picture>
-                      <p class="rewiew__opinion">Анастасия Мей</p>
+                      <span class="review__opinion">Анастасия Мей</span>
                   </cite>
                   </blockquote>
                 </div>
               </div>
             </div>
           </li>
-          <li class="slider-elements__item" id="croatia">
-            <div class="slider-elements__container">
-              <div class="slider-elements__description-container">
-                <h3 class="slider-elements__title">Хорватия</h3>
-              <p class="slider-elements__text">
+          <li class="countries__item" id="croatia">
+            <div class="countries__container">
+              <div class="countries__description-container">
+                <h3 class="countries__title">Хорватия</h3>
+              <p class="countries__text">
                 В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.
               </p>
-              <a class="button slider-elements__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
+              <a class="button countries__button button-buy" href="#" aria-label="Заказать тур">Купить тур сейчас</a>
               </div>
-              <div class="slider-elements__review rewiew">
-                <div class="rewiew__picture-wrapper">
+              <div class="countries__review review">
+                <div class="review__picture-wrapper">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/review-croatia-mobile.webp 1x, img/review-croatia-mobile@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 1023px)" srcset="img/review-croatia-tablet.webp 1x, img/review-croatia-tablet@2x.webp 2x">
@@ -295,17 +294,17 @@
                   </picture>
                   </div>
                 <div class="review__wrapper">
-                  <h3 class="rewiew__title">Отзывы</h3>
-                  <blockquote class="rewiew__blockquote">
-                    <p class="rewiew__opinion">
+                  <h3 class="review__title">Отзывы</h3>
+                  <blockquote class="review__blockquote">
+                    <p class="review__opinion">
                       Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)
                     </p>
-                    <cite class="rewiew__author">
+                    <cite class="review__author">
                       <picture>
                         <source type="image/webp" srcset="img/vladimir.webp 1x, img/vladimir@2x.webp 2x">
-                        <img class="rewiew_img-author" src="img/vladimir.jpg" srcset="img/vladimir@2x.jpg 2x" width="37" height="38" alt="Фото Владимира Мулицина">
+                        <img class="review__img-author" src="img/vladimir.jpg" srcset="img/vladimir@2x.jpg 2x" width="37" height="38" alt="Фото Владимира Мулицина">
                       </picture>
-                      <p class="rewiew__opinion">Владимир Мулицин</p>
+                      <span class="review__opinion">Владимир Мулицин</span>
                   </cite>
                   </blockquote>
                 </div>
@@ -323,9 +322,9 @@
             <p class="price__costs">$1999</p>
           </div>
           <p class="price__advice">
-            Ознакомьтесь с перечнем того, что входит в данный пакет
+            Ознакомьтесь с перечнем того, что&nbsp;входит в данный пакет
           </p>
-          <ul class="price__check-list">
+          <ul class="price__check-list price__check-full">
             <li class="price__check-item">
               <svg class="price__check" width="22" height="22">
                 <use xlink:href="img/sprite_auto.svg#check" x="0" y="0"></use>
@@ -359,34 +358,34 @@
             <p class="price__costs">$1399</p>
           </div>
           <p class="price__advice">
-            Ознакомьтесь с перечнем того, что входит в данный пакет
+            Ознакомьтесь с перечнем того, что&nbsp;входит в данный пакет
           </p>
           <ul class="price__check-list">
-            <li class="price__check-item">
+            <li class="price__check-item price__check-economy">
               <svg class="price__check" width="22" height="22">
                 <use xlink:href="img/sprite_auto.svg#check" x="0" y="0"></use>
               </svg>
               Разработанный маршрут с гидом группы
             </li>
-            <li class="price__check-item">
+            <li class="price__check-item price__check-economy">
               <svg class="price__check" width="22" height="22">
                 <use xlink:href="img/sprite_auto.svg#check" x="0" y="0"></use>
               </svg>
               Перелет и трансфер
             </li>
-            <li class="price__check-item">
+            <li class="price__check-item price__check-economy">
               <svg class="price__check" width="22" height="22">
                 <use xlink:href="img/sprite_auto.svg#check" x="0" y="0"></use>
               </svg>
               Проживание в хостелах при отелях
             </li>
-            <li class="price__check-item">
+            <li class="price__check-item price__check-economy">
               <svg class="price__check" width="22" height="22">
                 <use xlink:href="img/sprite_auto.svg#check" x="0" y="0"></use>
               </svg>
               Только завтраки в отелях
             </li>
-            <li class="price__check-item">
+            <li class="price__check-item price__check-economy">
               <svg class="price__check" width="22" height="22">
                 <use xlink:href="img/sprite_auto.svg#check" x="0" y="0"></use>
               </svg>
@@ -407,7 +406,7 @@
             <svg class="price__svg" width="30" height="30">
               <use xlink:href="img/sprite_auto.svg#phone" x="0" y="0"></use>
             </svg>
-            <a class="phone__link price__phone-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+            <a class="price__phone-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
           </div>
         </div>
       </div>
@@ -419,7 +418,7 @@
         <form class="question__form form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
           <span class="form__error form__error-phone">Данные не верны</span>
           <label class="question__label visually-hidden" for="tel-field">Введите ваш номер:</label>
-					<input class="form__input form__tel" type="tel" id="tel-field" name="tel" placeholder="+7 Введите 10 цифр номера">
+					<input class="form__input form__tel" type="tel" id="tel-field" name="tel" placeholder="+7 Введите 10 цифр номера" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
           <label class="visually-hidden" for="mail-field">Введите ваш e-mail:</label>
           <span class="form__error form__error-mail">Данные не верны</span>
 					<input class="form__input form__mail" type="email" id="mail-field" name="mail" placeholder="E-mail">
@@ -485,12 +484,12 @@
               <a href="#">Гренобль</a>
             </li>
           </ul>
-        </section>
+        </div>
       </section>
       <section class="footer__contacts contacts">
         <h2 class="footer__title contacts__title">Наши контакты</h2>
         <div class="contacts__mail">
-          <svg class="header__logo-link contacts__svg-mail" width="26" height="20">
+          <svg class="contacts__logo-link contacts__svg-mail" width="26" height="20">
             <use xlink:href="img/sprite_auto.svg#mail" x="0" y="0"></use>
           </svg>
           <a class="contacts__mail-link contacts__link">
@@ -521,7 +520,7 @@
       <div class="form__wrapper form__wrapper-phone">
         <label class="visually-hidden form__label-phone" for="tel-popup">Поле для ввода номера телефона</label>
         <span class="form__error form__error-popup-phone">Данные не верны</span>
-        <input class="form__input modal__input modal-tour__input modal-tour__phone-popup" type="tel" id="tel-popup" name="phone-popup" placeholder="+7  Введите 10 цифр телефона" required>
+        <input class="form__input modal__input modal-tour__input modal-tour__phone-popup" type="tel" id="tel-popup" name="phone-popup" placeholder="+7  Введите 10 цифр телефона" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
       </div>
       <div class="form__wrapper">
         <label class="visually-hidden form__label-mail" for="mail-popup">Поле для ввода e-mail:</label>
@@ -530,7 +529,7 @@
       </div>
       <button class="form__button button modal-tour__button" type="submit" value="Отправить">Отправить</button>
     </form>
-    <button type="button" class="modal__close" aria-label="Закрыть"></button>
+    <button type="button" class="modal__close modal__closeForm" aria-label="Закрыть"></button>
   </section>
 
   <section class="modal modal-succes">

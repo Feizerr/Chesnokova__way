@@ -1,5 +1,5 @@
 .areas__wrapper {
-  width: 62%;
+  width: 61%;
   margin: 0 auto;
 }
 
@@ -34,11 +34,11 @@
 
 .areas__title {
   @include offset(0, 0);
-  @include Montserrat(600);
   @include fonts(55px, 80px);
   width: 358px;
   position: relative;
   margin-bottom: 64px;
+  font-weight: 600;
 
   &::after {
     position: absolute;
@@ -48,7 +48,7 @@
     width: 228.5px;
     height: 4px;
     left: 0;
-    bottom: -30px;
+    bottom: -35px;
   }
 }
 
@@ -73,8 +73,8 @@
 
 .areas__text {
   @include offset(0, 0);
-  width: 328px;
-  margin-bottom: 56px;
+  width: 343px;
+  margin-bottom: 57px;
   color: rgba($dark, 0.7);
 }
 
@@ -111,13 +111,19 @@
   width: 29.8%;
   min-width: 250px;
   margin-left: 5.1%;
-  margin-bottom: 101px;
+  margin-bottom: 106px;
   box-sizing: border-box;
   height: 425px;
   max-height: 425px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+
+  &:nth-last-child(1),
+  &:nth-last-child(2),
+  &:nth-last-child(3) {
+    margin-bottom: 101px;
+  }
 
   &:first-child {
     margin-left: 0;
@@ -314,8 +320,8 @@
 }
 
 .areas__button {
-  @include Montserrat(500);
   @include fonts(14px, 17px);
+  font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: $white;
@@ -329,15 +335,15 @@
 }
 
 .areas__country {
-  @include Montserrat(500);
   @include fonts(24px, 29px);
   @include offset(0, 0);
+  font-weight: 500;
   position: absolute;
   color: $dark;
   background-color: $white;
   text-align: center;
   min-width: 61%;
-  padding: 16px 5px 17px 5px;
-  bottom: 0;
-  left: 20%;
+  padding: 18px 10px 17px 10px;
+  bottom: -8px;
+  left: 19%;
 }

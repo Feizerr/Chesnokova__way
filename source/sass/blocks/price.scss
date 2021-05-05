@@ -1,7 +1,7 @@
 .price {
-  width: 62%;
+  width: 61%;
   margin: 0 auto;
-  padding-bottom: 138px;
+  padding-bottom: 133px;
   display: flex;
   justify-content: space-between;
 }
@@ -23,10 +23,10 @@
 
 .price__list {
   @include list-reset();
-  min-width: 65.08%;
+  min-width: 64.58%;
   display: flex;
   justify-content: space-between;
-  margin-right: 3.81%;
+  margin-right: 10.15%;
 }
 
 @media (max-width: $tablet-width) {
@@ -46,15 +46,16 @@
 }
 
 .price__item {
-  padding: 40px 4% 30px 4%;
+  padding: 38px 4% 30px 4%;
   border: 3px solid rgba($dark, 0.3);
-  width: 48.0558%;
+  width: 49%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  border-radius: 10px;
 
   &:first-child {
-    margin-right: 2.5%;
+    margin-right: 3%;
   }
 }
 
@@ -63,11 +64,12 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     border: 1px solid rgba($dark, 0.3);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border-radius: 10px 10px 0 0;
   }
 }
 
@@ -84,7 +86,7 @@
 }
 
 .price__wrapper {
-  width: 24,61%;
+  width: 100%;
 }
 
 @media (max-width: $tablet-width) {
@@ -97,8 +99,9 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   color: rgba($dark, 0.7);
+  width: 100%;
 }
 
 @media (max-width: $tablet-width) {
@@ -120,11 +123,12 @@
 
 .price__item-title {
   @include offset(0, 0);
-  @include Montserrat(600);
   @include fonts(28px, 34px);
+  font-weight: 600;
   letter-spacing: -2px;
   text-align: left;
-  min-width: 179px;
+  min-width: 219px;
+  padding-right: 10px;
 }
 
 @media (max-width: $tablet-width) {
@@ -139,13 +143,14 @@
 
 .price__costs {
   @include offset(0, 0);
-  @include Montserrat(700);
   @include fonts(25px, 34px);
+  font-weight: 700;
   text-align: right;
 }
 
 .price__advice {
   @include offset(0, 0);
+  line-height: 24px;
   padding-bottom: 28px;
 }
 
@@ -163,9 +168,9 @@
   @include offset(0, 0);
   @include fonts(16px, 32px);
   min-height: 341px;
-  padding-top: 28px;
+  padding-top: 30px;
   padding-left: 30px;
-  padding-bottom: 32px;
+  padding-bottom: 18px;
   border-top: 1px solid rgba($dark, 0.3);
 
   &:last-child {
@@ -182,7 +187,7 @@
 .price__check {
   position: absolute;
   left: -30px;
-  top: 4px;
+  top: 6px;
   color: $pink;
 }
 
@@ -196,12 +201,18 @@
 .price__check-item {
   text-align: left;
   position: relative;
+  padding-bottom: 10px;
 }
 
 @media (max-width: $tablet-width) {
   .price__check-item {
     padding: 0 8% 10px 8%;
   }
+}
+
+.price__check-economy {
+  line-height: 32px;
+  padding-bottom: 15px;
 }
 
 .price__button {
@@ -218,10 +229,10 @@
 
 .price__title {
   @include offset(0, 0);
-  @include Montserrat(600);
   @include fonts(55px, 90px);
   width: 100%;
-  padding-top: 117px;
+  font-weight: 600;
+  padding-top: 109px;
   margin-bottom: 53px;
   position: relative;
 
@@ -232,7 +243,7 @@
     background-color: $pink;
     width: 175px;
     height: 2px;
-    bottom: -10px;
+    bottom: -18px;
     left: 0;
   }
 }
@@ -263,7 +274,8 @@
   @include fonts(16px, 27px);
   color: rgba($dark, 0.7);
   width: 100%;
-  margin-bottom: 56px;
+  margin-bottom: 62px;
+  // padding-right: 10px;
 }
 
 @media (max-width: $tablet-width) {
@@ -276,10 +288,11 @@
 
 .price__call-to-action {
   @include offset(0, 0);
-  @include Montserrat(500);
   @include fonts(22px, 34px);
+  font-weight: 500;
   text-align: right;
-  padding-bottom: 13px;
+  padding-bottom: 14px;
+  padding-left: 9px;
 }
 
 @media (max-width: $tablet-width) {
@@ -298,7 +311,6 @@
 
 .price__phone {
 display: flex;
-justify-content: flex-end;
 }
 
 @media (max-width: $tablet-width) {
@@ -311,6 +323,10 @@ justify-content: flex-end;
   @include fonts(20px, 32px);
   text-align: right;
   margin-bottom: 30px;
+  @include link();
+  display: block;
+  color: $dark;
+  box-sizing: border-box;
 }
 
 @media (max-width: $tablet-width) {

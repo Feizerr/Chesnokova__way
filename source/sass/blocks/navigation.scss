@@ -21,12 +21,12 @@
 }
 
 .navigation__list {
+  @include list-reset();
+
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  padding-top: 20px;
-
-  @include list-reset();
+  padding-right: 7%;
 }
 
 @media (max-width: $tablet-width) {
@@ -75,16 +75,16 @@
 
 .navigation__link {
   @include link();
-  @include Montserrat(300);
   @include fonts(14px, 17px);
   color: $dark;
+  font-weight: 500;
 }
 
 @media (max-width: $tablet-width) {
   .navigation__link {
-    @include Montserrat(600);
     @include fonts(20px, 28px);
     color: $almost-black;
+    font-weight: 600;
   }
 }
 

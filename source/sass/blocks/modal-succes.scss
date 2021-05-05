@@ -11,8 +11,8 @@
 }
 
 .modal-succes__text {
-  @include Montserrat(500);
-  @include fonts(25px, 42px)
+  @include fonts(25px, 42px);
+  font-weight: 500;
   margin: 0 auto;
   text-align: center;
   max-width: 399px;

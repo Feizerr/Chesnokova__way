@@ -35,7 +35,7 @@
 }
 
 .promo__wrapper {
-  padding-left: 58%;
+  padding-left: 56%;
 }
 
 @media (max-width: $tablet-width) {
@@ -68,11 +68,11 @@
 
 .promo__title {
   @include offset(0, 0);
-  @include Montserrat(600);
   @include fonts(55px, 80px);
   color: $white;
-  padding-top: 135px;
-  padding-bottom: 30px;
+  font-weight: 600;
+  padding-top: 181px;
+  padding-bottom: 32px;
   width: 412px;
 }
 
@@ -100,8 +100,8 @@
   @include offset(0, 0);
   color: $white;
   padding-right: 24%;
-  padding-left: 58%;
-  padding-bottom: 39px;
+  padding-left: 56%;
+  padding-bottom: 35px;
 }
 
 @media (max-width: $tablet-width) {
@@ -127,7 +127,8 @@
   max-width: 340px;
   box-sizing: border-box;
   position: relative;
-  margin-left: 58%;
+  margin-left: 56%;
+  letter-spacing: 2px;
 
   &::after {
     position: absolute;
@@ -138,7 +139,7 @@
     width: 16px;
     height: 16px;
     top: 28px;
-    right: 60px;
+    right: 40px;
   }
 }
 

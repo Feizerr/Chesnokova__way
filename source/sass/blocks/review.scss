@@ -1,4 +1,4 @@
-.rewiew {
+.review {
   position: relative;
   flex-grow: 1;
 }
@@ -9,12 +9,12 @@
   }
 }
 
-.rewiew__title {
-  @include Montserrat(500);
+.review__title {
   @include fonts(30px, 36px);
   @include offset(0, 0);
-  margin-bottom: 63px;
+  margin-bottom: 35px;
   position: relative;
+  font-weight: 500;
 
   &::after {
     position: absolute;
@@ -29,7 +29,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .rewiew__title {
+  .review__title {
     margin-bottom: 32px;
 
     &::after {
@@ -38,33 +38,33 @@
   }
 }
 
-.rewiew__blockquote {
+.review__blockquote {
   @include offset(0, 0);
 }
 
-.rewiew__opinion {
+.review__opinion {
   @include offset(0, 0);
   @include fonts(14px, 28px);
   color: rgba($dark, 0.7);
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 
-.rewiew_img-author {
+.review__img-author {
   display: block;
   margin: 0;
   margin-right: 16px;
 }
 
-.rewiew__author {
+.review__author {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.rewiew__author-name {
+.review__author-name {
   @include offset(0, 0);
-  @include Montserrat(500);
   @include fonts(16px, 19px);
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -74,8 +74,8 @@
   padding: 30px 36px;
   box-sizing: border-box;
   position: absolute;
-  top: 119px;
-  left: 73.9%;
+  top: 104px;
+  left: 44.70%;
 }
 
 @media (max-width: $tablet-width) {
@@ -97,7 +97,7 @@
 }
 
 .review__picture {
-  width: 100%;
+  width: 63%;
   object-fit: cover;
 }
 
@@ -116,7 +116,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .rewiew__picture-wrapper {
+  .review__picture-wrapper {
     width: 100%;
   }
 }

@@ -14,6 +14,124 @@ headerToggle.addEventListener("click", function () {
   navigation.classList.toggle("navigation__show");
 });
 
+//Popup
+var buttonBuy = document.querySelectorAll(".button-buy");
+var popupForBuyingTour = document.querySelector(".modal-tour");
+var buttonClose = document.querySelectorAll(".modal__close");
+var anyPopup = document.querySelector(".modal");
+var phoneInput = document.querySelector(".modal-tour__phone-popup");
+var mailInput = document.querySelector(".modal-tour__mail");
+var form = document.querySelector(".modal");
+var errorBlockForMail = document.querySelector('.form__error-popup-mail');
+var errorBlockForPhone = document.querySelector('.form__error-popup-phone');
+var formButton = document.querySelectorAll('.form__button');
+var succesPopup = document.querySelector('.modal-succes');
+
+var isStorageSupport = true;
+var storage = "";
+
+try {
+  storage = localStorage.getItem("phone");
+  storage = localStorage.getItem("mail");
+} catch (err) {
+  isStorageSupport = false;
+}
+
+buttonBuy.forEach((button) => {
+  button.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    popupForBuyingTour.classList.add("modal-active");
+
+    if (storage) {
+      phoneInput.value = storage;
+      mailInput.value = storage;
+    }
+
+    phoneInput.focus();
+  })
+})
+
+//Отправка формы
+
+form.addEventListener("submit", function (evt) {
+  if (!phoneInput.value) {
+    evt.preventDefault();
+  }
+
+  if (!mailInput.value) {
+    evt.preventDefault();
+  }
+
+  else {
+    if (isStorageSupport) {
+      localStorage.setItem("phone", phoneInput.value);
+      localStorage.setItem("mail", mailInput.value);
+      succesPopup.classList.add("modal-active");
+    } else {
+      succesPopup.classList.add("modal-active");
+    }
+  }
+});
+
+var closePopup = function () {
+  phoneInput.value = "";
+  mailInput.value = "";
+  phoneInput.classList.remove("modal__input-invalid");
+  errorBlockForMail.classList.remove("form__error-active");
+  mailInput.classList.remove("modal__input-invalid");
+  popupForBuyingTour.classList.remove("modal-active");
+  errorBlockForPhone.classList.remove("form__error-active");
+}
+
+buttonClose.forEach((button) => {
+  button.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    closePopup();
+    succesPopup.classList.remove("modal-active");
+  })
+})
+
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    closePopup();
+    succesPopup.classList.remove("modal-active");
+  }
+});
+
+//Валидация
+
+phoneInput.value.addEventListener('invalid', () => {
+  if (phoneInput.validity.patternMismatch) {
+    errorBlockForPhone.classList.add("form__error-active");
+    phoneInput.classList.add("modal__input-invalid");
+  } else if (phoneInput.validity.valueMissing) {
+    errorBlockForPhone.classList.add("form__error-active");
+    phoneInput.classList.add("modal__input-invalid");
+  } else {
+    phoneInput.setCustomValidity('');
+  }
+});
+
+mailInput.value.addEventListener('invalid', () => {
+  if (mailInput.validity.patternMismatch) {
+    errorBlockForMail.classList.add("form__error-active");
+    phoneInput.classList.add("modal__input-invalid");
+  } else if (mailInput.validity.valueMissing) {
+    errorBlockForPhone.classList.add("form__error-active");
+    mailInput.classList.add("modal__input-invalid");
+  } else {
+    mailInput.setCustomValidity('');
+  }
+});
+
+
+
+
+
+
+
+
 //Swipe
 jQuery(document).ready(function($) {
   var alterClass = function() {
@@ -36,107 +154,24 @@ jQuery(document).ready(function($) {
   alterClass();
 });
 
+//Slider
 
-//Popup
-var buttonBuy = document.querySelector(".button-buy");
-var popupForBuyingTour = document.querySelector(".modal-tour");
-var buttonClose = document.querySelector(".modal__close");
-var anyPopup = document.querySelector(".modal");
-var phoneInput = document.querySelector(".modal-tour__phone-popup");
-var mailInput = document.querySelector(".modal-tour__mail");
-var form = document.querySelector(".modal");
-var errorBlockForMail = document.querySelector('.form__error-popup-mail');
-var errorBlockForPhone = document.querySelector('.form__error-popup-phone');
+// let tabs = document.querySelectorAll(".slider__link");
+// let countries = document.querySelector(".countries__item");
 
-var isStorageSupport = true;
-var storage = "";
-
-try {
-  storage = localStorage.getItem("phone");
-  storage = localStorage.getItem("mail");
-} catch (err) {
-  isStorageSupport = false;
-}
-
-buttonBuy.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popupForBuyingTour.classList.add("modal-active");
-
-  if (storage) {
-    phoneInput.value = storage;
-    mailInput.value = storage;
-  }
-
-  phoneInput.focus();
-})
-
-buttonClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  anyPopup.classList.remove("modal-active");
-  errorBlockForPhone.classList.remove("form__error-active");
-  phoneInput.classList.remove("modal__input-invalid");
-  errorBlockForMail.classList.remove("form__error-active");
-  mailInput.classList.remove("modal__input-invalid");
-});
-
-form.addEventListener("submit", function (evt) {
-  if (!phoneInput.value) {
-    evt.preventDefault();
-    errorBlockForPhone.classList.add("form__error-active");
-    phoneInput.classList.add("modal__input-invalid");
-  }
-
-  if (!mailInput.value) {
-    evt.preventDefault();
-    errorBlockForMail.classList.add("form__error-active");
-    mailInput.classList.add("modal__input-invalid");
-  }
-
-  else {
-    if (isStorageSupport) {
-      localStorage.setItem("phone", phoneInput.value);
-      localStorage.setItem("mail", mailInput.value);
-    }
-  }
-});
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.key === 27) {
-    if (anyPopup.classList.contains("modal-show")) {
-      evt.preventDefault();
-      anyPopup.classList.remove("modal-show");
-    }
-  }
-});
+// tabs.forEach((tab, i) => {
+//   tab.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     countries.forEach(country) => {
+//       if(country.classList.contains('slider__link--active')) {
+//         country.classList.remove('slider__link--active');
+//       }
+//       if (country === tabs) {
+//         country.classList.add('slider__link--active');
+//       }
+//     }
+//   })
+// })
+//при нажатии на каждый таб открывается карточка с тем де номером
 
 
-// var closePopupButton = document.querySelector(".modal__close");
-// const tourPopup = document.querySelector(".modal-tour");
-// const succesPopup = document.querySelector("modal-succes");
-// // const page = document.querySelector("main");
-
-// const onDocumentKeydown = (evt) => {
-//   if (evt.keyCode === 27) {
-//     const popup = document.querySelector(".alert-popup");
-//     popup.remove();
-//   }
-
-//   document.removeEventListener("keydown", onDocumentKeydown);
-// };
-
-// const onPopupClickHandler = () => {
-//   const popup = document.querySelector(".alert-popup");
-//   popup.remove();
-//   document.removeEventListener("keydown", onDocumentKeydown);
-//   popup.removeEventListener("click", onPopupClickHandler);
-// };
-
-// const showPopup = (popupTemplate) => {
-//   page.append(popupTemplate.cloneNode(true));
-//   const popup = document.querySelector(".alert-popup");
-
-//   if (popup) {
-//     document.addEventListener("keydown", onDocumentKeydown);
-//     popup.addEventListener("click", onPopupClickHandler);
-//   }
-// };

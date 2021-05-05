@@ -20,8 +20,8 @@
 
 .modal-tour__title {
   @include offset(0, 0);
-  @include Montserrat(600);
   @include fonts(25px, 42px);
+  font-weight: 600;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -59,7 +59,7 @@
 
 .modal-tour__input::placeholder {
   @include fonts(14px, 17px);
-  @include Montserrat(400);
+  font-weight: 400;
 }
 
 .modal-tour__phone-popup::placeholder {

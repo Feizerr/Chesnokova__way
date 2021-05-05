@@ -1,8 +1,51 @@
-.slider-elements {
+.countries {
+  width: 61%;
+  margin: 0 auto;
+  padding-bottom: 224px;
+}
+
+@media (max-width: $tablet-width) {
+  .countries {
+    width: 100%;
+    padding-bottom: 112px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .countries {
+    padding-bottom: 45px;
+  }
+}
+
+.countries__list {
+  @include offset(0, 0);
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+  width: 78.3%;
+  padding-bottom: 0;
+  border-bottom: 1px solid rgba($dark, 0.3);
+}
+
+@media (max-width: $tablet-width) {
+  .countries__list {
+    padding-left: 37px;
+    flex-wrap: nowrap;
+    max-width: 950px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .countries__list {
+    margin-bottom: 24px;
+  }
+}
+
+.countries__elements-list {
   @include list-reset();
 }
 
-.slider-elements__item {
+.countries__item {
   display: none;
 
   &--active {
@@ -10,29 +53,29 @@
   }
 }
 
-.slider-elements__container {
+.countries__container {
   display: flex;
   position: relative;
 }
 
 @media (max-width: $tablet-width) {
-  .slider-elements__container {
+  .countries__container {
     flex-wrap: wrap;
     flex-direction: column;
     // align-items: center;
   }
 }
 
-.slider-elements__description-container {
+.countries__description-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-right: 3.7%;
-  width: 36.5%;
+  margin-right: 6.7%;
+  width: 33.5%;
 }
 
 @media (max-width: $tablet-width) {
-  .slider-elements__description-container {
+  .countries__description-container {
     align-items: center;
     margin: 0 auto;
     width: 90%;
@@ -40,16 +83,16 @@
 }
 
 @media (max-width: $mobile-width) {
-  .slider-elements__description-container {
+  .countries__description-container {
     width: 86%;
   }
 }
 
-.slider-elements__title {
+.countries__title {
   @include offset(0, 0);
   @include fonts(55px, 90px);
-  @include Montserrat(600);
-  margin-bottom: 53px;
+  font-weight: 600;
+  margin-bottom: 50px;
   position: relative;
 
   &::after {
@@ -60,43 +103,43 @@
     width: 175px;
     height: 2px;
     left: 0;
-    bottom: -10px;
+    bottom: -18px;
   }
 }
 
 @media (max-width: $tablet-width) {
-  .slider-elements__title {
+  .countries__title {
     @include fonts(30px, 45px);
     margin-bottom: 20px;
   }
 
-  .slider-elements__title::after {
+  .countries__title::after {
     display: none;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .slider-elements__title {
+  .countries__title {
     @include fonts(24px, 36px);
   }
 }
 
-.slider-elements__text {
+.countries__text {
   @include offset(0, 0);
   @include fonts(16px, 28px);
-  @include Montserrat(400);
   color: rgba($dark, 0.7);
-  margin-bottom: 17px;
+  font-weight: 400;
+  margin-bottom: 50px;
 }
 
 @media (max-width: $tablet-width) {
-  .slider-elements__text {
+  .countries__text {
     text-align: center;
     margin-bottom: 20px;
   }
 }
 
-.slider-elements__button {
+.countries__button {
   width: 250px;
   padding: 30px 20px;
   border: none;
@@ -105,7 +148,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .slider-elements__button {
+  .countries__button {
     width: 250px;
     padding: 19px 20px;
     letter-spacing: 2px;
@@ -114,7 +157,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .slider-elements__button {
+  .countries__button {
     @include fonts(10px, 12px);
     width: 100%;
     margin-bottom: 49px;

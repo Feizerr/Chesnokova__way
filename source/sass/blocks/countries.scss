@@ -7,7 +7,7 @@
 @media (max-width: $tablet-width) {
   .countries {
     width: 100%;
-    padding-bottom: 112px;
+    padding-bottom: 84px;
   }
 }
 
@@ -29,9 +29,10 @@
 
 @media (max-width: $tablet-width) {
   .countries__list {
-    padding-left: 37px;
+    margin-left: 8%;
     flex-wrap: nowrap;
-    max-width: 950px;
+    max-width: 900px;
+    overflow: hidden;
   }
 }
 
@@ -78,7 +79,7 @@
   .countries__description-container {
     align-items: center;
     margin: 0 auto;
-    width: 90%;
+    width: 94%;
   }
 }
 
@@ -91,6 +92,7 @@
 .countries__title {
   @include offset(0, 0);
   @include fonts(55px, 90px);
+  color: $grey;
   font-weight: 600;
   margin-bottom: 50px;
   position: relative;
@@ -136,6 +138,7 @@
   .countries__text {
     text-align: center;
     margin-bottom: 20px;
+    letter-spacing: -0.47px;
   }
 }
 

@@ -1,14 +1,16 @@
 .corporate-trip {
-  max-width: 31%;
-  padding-left: 43px;
+  max-width: 29.9%;
+  // padding-left: 43px;
+  padding-left: 4%;
   box-sizing: border-box;
+  flex-grow: 1;
 }
 
 @media (max-width: $tablet-width) {
   .corporate-trip {
     text-align: center;
     max-width: 100%;
-    padding: 30px 50px 50px 50px;
+    padding: 17px 17px 50px 17px;
     box-sizing: border-box;
     border-top: 1px solid $light-grey;
   }

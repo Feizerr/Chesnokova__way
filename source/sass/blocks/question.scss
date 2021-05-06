@@ -42,19 +42,19 @@
 
 .question__wrapper {
   width: 635px;
-  padding: 50px 28px;
+  padding: 50px 30px 50px 37px;
   box-sizing: border-box;
   background-color: $white;
   display: flex;
   flex-wrap: wrap;
-  direction: column;
   justify-content: center
 }
 
 @media (max-width: $tablet-width) {
   .question__wrapper {
     width: 658px;
-    padding: 50px 50px;
+    min-height: 311px;
+    padding: 38px 50px 41px 50px;
   }
 }
 
@@ -67,11 +67,17 @@
 
 .question__title {
   @include offset(0, 0);
-  @include Montserrat(600);
   @include fonts(25px, 32px);
+  font-weight: 600;
   width: 90%;
   text-align: center;
-  margin-bottom: 5px;
+  margin: 0 0 9px 5px;
+}
+
+@media (max-width: $tablet-width) {
+  .question__title {
+    padding-top: 20px;
+  }
 }
 
 .question__text {
@@ -166,6 +172,5 @@
   position: absolute;
   top: -16px;
   left: 0;
-
-display: none;
- }
+  display: none;
+}

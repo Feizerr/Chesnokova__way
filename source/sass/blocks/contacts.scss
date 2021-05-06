@@ -1,16 +1,16 @@
 .contacts {
-  width: 33%;
-  padding-right: 33px;
-  padding-left: 90px;
+  width: 33.2%;
+  // padding-right: 33.2px;
+  // padding-left: 90px;
+  padding-left: 7.6%;
   box-sizing: border-box;
   border-right: 1px solid $light-grey;
 }
 
 @media (max-width: $tablet-width) {
   .contacts {
-    width: 45%;
-    padding-right: 23px;
-    padding-left: 50px;
+    width: 46%;
+    padding-left: 8%;
     box-sizing: border-box;
     border-right: none;
   }
@@ -35,7 +35,7 @@
 
 @media (max-width: $tablet-width) {
   .contacts__mail {
-    padding-bottom: 25px;
+    padding-bottom: 13px;
   }
 }
 
@@ -47,6 +47,8 @@
 
 .contacts__phone {
   padding-bottom: 25px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 @media (max-width: $mobile-width) {
@@ -63,6 +65,8 @@
   @include link();
   color: $pink;
   text-decoration: underline;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 .contacts__mail-link {
@@ -75,6 +79,6 @@
 
 @media (max-width: $tablet-width) {
   .contacts__title {
-    margin-bottom: 25px;
+    margin-bottom: 17px;
   }
 }

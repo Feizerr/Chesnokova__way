@@ -12,6 +12,7 @@
 <body class="page">
   <header>
     <section class="header">
+      <h2 class="visually-hidden">Навигация по сайту</h2>
       <a class="header__logo" href="#">
         <svg class="header__logo-link" width="57" height="22">
           <use xlink:href="img/sprite_auto.svg#logo" x="0" y="0"></use>
@@ -161,7 +162,7 @@
           <li class="countries__item" id="albania">
             <div class="countries__container">
               <div class="countries__description-container">
-                <h3 class="countries__title">Албания</h3>
+                <h2 class="countries__title">Албания</h2>
                 <p class="countries__text">
                   В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
                 </p>
@@ -199,7 +200,7 @@
           <li class="countries__item" id="makedonia">
             <div class="countries__container">
               <div class="countries__description-container">
-                <h3 class="countries__title">Македония</h3>
+                <h2 class="countries__title">Македония</h2>
                 <p class="countries__text">
                   В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.
                 </p>
@@ -238,7 +239,7 @@
           <li class="countries__item" id="montenegro">
             <div class="countries__container">
               <div class="countries__description-container">
-                <h3 class="countries__title">Черногория</h3>
+                <h2 class="countries__title">Черногория</h2>
                 <p class="countries__text">
                   Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
                 </p>
@@ -276,7 +277,7 @@
           <li class="countries__item" id="croatia">
             <div class="countries__container">
               <div class="countries__description-container">
-                <h3 class="countries__title">Хорватия</h3>
+                <h2 class="countries__title">Хорватия</h2>
               <p class="countries__text">
                 В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.
               </p>
@@ -315,6 +316,7 @@
       </div>
     </section>
     <section class="price" id="price">
+      <h2 class="visually-hidden">Стоимость туров</h2>
       <ul class="price__list">
         <li class="price__item">
           <div class="price__container">
@@ -418,10 +420,10 @@
         <form class="question__form form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
           <span class="form__error form__error-phone">Данные не верны</span>
           <label class="question__label visually-hidden" for="tel-field">Введите ваш номер:</label>
-					<input class="form__input form__tel" type="tel" id="tel-field" name="tel" placeholder="+7 Введите 10 цифр номера" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          <input class="form__input form__tel" type="tel" id="tel-field" name="tel" placeholder="+7 Введите 10 цифр номера" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
           <label class="visually-hidden" for="mail-field">Введите ваш e-mail:</label>
           <span class="form__error form__error-mail">Данные не верны</span>
-					<input class="form__input form__mail" type="email" id="mail-field" name="mail" placeholder="E-mail">
+          <input class="form__input form__mail" type="email" id="mail-field" name="mail" placeholder="E-mail">
           <button class="button form__button" type="submit" aria-label="Получить помощь">Отправить</button>
         </form>
       </div>
@@ -533,7 +535,7 @@
   </section>
 
   <section class="modal modal-succes">
-    <h2 class="visually-hidden">Заявка отправлена</h2>
+    <h2 class="visually-hidden">Успешная отправка</h2>
     <p class="modal-succes__text">
       Форма успешно отправлена, спасибо! :)
     </p>

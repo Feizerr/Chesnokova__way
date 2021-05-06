@@ -49,6 +49,12 @@
   margin-bottom: 31px;
 }
 
+@media (max-width: $tablet-width) {
+  .review__opinion {
+    letter-spacing: -0.41px;
+  }
+}
+
 .review__img-author {
   display: block;
   margin: 0;
@@ -82,6 +88,7 @@
   .review__wrapper {
     top: 40px;
     left: 50%;
+    padding: 20px 30px;
     transform: translate(-50%, 30px);
   }
 }

@@ -16,3 +16,9 @@
     background-color: $orange;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .button {
+    @include fonts(10px, 12px);
+  }
+}

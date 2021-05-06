@@ -6,6 +6,7 @@
 @media (max-width: $tablet-width) {
   .areas__wrapper {
     width: 78%;
+    padding-bottom: 90px;
   }
 }
 
@@ -84,6 +85,7 @@
     width: 343px;
     margin-bottom: 40px;
     text-align: center;
+    letter-spacing: -0.47px;
   }
 }
 
@@ -134,6 +136,13 @@
   .areas__item {
     width: 47%;
     max-height: none;
+    margin-bottom: 18px;
+
+    &:nth-last-child(1),
+    &:nth-last-child(2),
+    &:nth-last-child(3) {
+    margin-bottom: 18px;
+  }
   }
 
   .areas__item:nth-child(odd) {
@@ -346,4 +355,13 @@
   padding: 18px 10px 17px 10px;
   bottom: -8px;
   left: 19%;
+}
+
+@media (max-width: $tablet-width) {
+  .areas__country {
+    min-width: 75%;
+    padding: 18px 10px 17px 10px;
+    bottom: 0;
+    left: 14%;
+  }
 }

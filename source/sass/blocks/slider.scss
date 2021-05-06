@@ -2,6 +2,12 @@
   padding-bottom: 84px;
 }
 
+@media (max-width: $tablet-width) {
+  .slider {
+    padding-bottom: 32px;
+  }
+}
+
 .slider__item {
   padding-right: 11%;
   padding-bottom: 15px;
@@ -15,7 +21,7 @@
   .slider__item {
     justify-content: center;
     padding-right: 0;
-    margin-right: 11%;
+    margin-right: 15%;
   }
 }
 

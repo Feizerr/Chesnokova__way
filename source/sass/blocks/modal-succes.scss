@@ -1,12 +1,12 @@
 .modal-succes {
   display: none;
- }
+}
 
 @media (max-width: $mobile-width) {
   .modal-succes {
-   max-width: 100%;
-   padding: 100px 40px;
-   height: max-content;
+    max-width: 100%;
+    padding: 100px 40px;
+    height: max-content;
   }
 }
 

@@ -35,6 +35,7 @@
   max-width: 33%;
   margin-right: 3%;
 }
+
 @media (max-width: $tablet-width) {
   .trip__list {
     max-width: 30%;
@@ -43,10 +44,10 @@
 
 @media (max-width: $mobile-width) {
   .trip__list {
-    min-width: 50%;
+    min-width: 47%;
     justify-content: center;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 4px;
   }
 }
 
@@ -56,7 +57,7 @@
 
 @media (max-width: $tablet-width) {
   .trip__item {
-    width: 125px;
+    width: 111px;
   }
 }
 

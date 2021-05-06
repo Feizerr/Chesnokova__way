@@ -19,7 +19,7 @@
 @media (max-width: $mobile-width) {
   .contacts {
     padding: 0;
-    padding-top: 30px;
+    padding-top: 34px;
     width: 100%;
     border-top: 1px solid $light-grey;
     display: flex;
@@ -53,6 +53,7 @@
 
 @media (max-width: $mobile-width) {
   .contacts__phone {
+    justify-content: center;
     padding-bottom: 19px;
   }
 }
@@ -80,5 +81,11 @@
 @media (max-width: $tablet-width) {
   .contacts__title {
     margin-bottom: 17px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contacts__title {
+    margin-bottom: 22px;
   }
 }

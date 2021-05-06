@@ -190,7 +190,7 @@
                         <source type="image/webp" srcset="img/marina.webp 1x, img/marina@2x.webp 2x">
                         <img class="review__img-author" src="img/marina.jpg" srcset="img/marina@2x.jpg 2x" width="37" height="38" alt="Фото Влады Голициной">
                       </picture>
-                      <span class="review__opinion">Маришка</span>
+                      <span class="review__author-name">Маришка</span>
                   </cite>
                   </blockquote>
                 </div>
@@ -229,7 +229,7 @@
                         <source type="image/webp" srcset="img/mikhail.webp 1x, img/mikhail@2x.webp 2x">
                         <img class="review__img-author" src="img/mikhail.jpg" srcset="img/mikhail@2x.jpg 2x" width="37" height="38" alt="Фото Михаила Кузьмина">
                       </picture>
-                      <span class="review__opinion">Михаил Кузьмин</span>
+                      <span class="review__author-name">Михаил Кузьмин</span>
                   </cite>
                   </blockquote>
                 </div>
@@ -267,7 +267,7 @@
                         <source type="image/webp" srcset="img/anastasiia.webp 1x, img/anastasiia@2x.webp 2x">
                         <img class="review__img-author" src="img/anastasiia.jpg" srcset="img/anastasiia@2x.jpg 2x" width="37" height="38" alt="Фото Анастасии Мей">
                       </picture>
-                      <span class="review__opinion">Анастасия Мей</span>
+                      <span class="review__author-name">Анастасия Мей</span>
                   </cite>
                   </blockquote>
                 </div>
@@ -305,7 +305,7 @@
                         <source type="image/webp" srcset="img/vladimir.webp 1x, img/vladimir@2x.webp 2x">
                         <img class="review__img-author" src="img/vladimir.jpg" srcset="img/vladimir@2x.jpg 2x" width="37" height="38" alt="Фото Владимира Мулицина">
                       </picture>
-                      <span class="review__opinion">Владимир Мулицин</span>
+                      <span class="review__author-name">Владимир Мулицин</span>
                   </cite>
                   </blockquote>
                 </div>
@@ -420,7 +420,7 @@
         <form class="question__form form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
           <span class="form__error form__error-phone">Данные не верны</span>
           <label class="question__label visually-hidden" for="tel-field">Введите ваш номер:</label>
-          <input class="form__input form__tel" type="tel" id="tel-field" name="tel" placeholder="+7 Введите 10 цифр номера" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          <input class="form__input form__tel" type="tel" id="tel-field" name="tel" placeholder="+7 Введите 10 цифр номера" pattern="\+7[1-9]{10}" required>
           <label class="visually-hidden" for="mail-field">Введите ваш e-mail:</label>
           <span class="form__error form__error-mail">Данные не верны</span>
           <input class="form__input form__mail" type="email" id="mail-field" name="mail" placeholder="E-mail">
@@ -522,7 +522,7 @@
       <div class="form__wrapper form__wrapper-phone">
         <label class="visually-hidden form__label-phone" for="tel-popup">Поле для ввода номера телефона</label>
         <span class="form__error form__error-popup-phone">Данные не верны</span>
-        <input class="form__input modal__input modal-tour__input modal-tour__phone-popup" type="tel" id="tel-popup" name="phone-popup" placeholder="+7  Введите 10 цифр телефона" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <input class="form__input modal__input modal-tour__input modal-tour__phone-popup" type="tel" id="tel-popup" name="phone-popup" placeholder="+7  Введите 10 цифр телефона" pattern="\+7[1-9]{10}" required>
       </div>
       <div class="form__wrapper">
         <label class="visually-hidden form__label-mail" for="mail-popup">Поле для ввода e-mail:</label>

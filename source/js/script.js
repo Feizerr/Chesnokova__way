@@ -19,9 +19,9 @@ var buttonBuy = document.querySelectorAll(".button-buy");
 var popupForBuyingTour = document.querySelector(".modal-tour");
 var buttonClose = document.querySelectorAll(".modal__close");
 var anyPopup = document.querySelector(".modal");
-var phoneInput = document.querySelector(".modal-tour__phone-popup");
-var mailInput = document.querySelector(".modal-tour__mail");
-var form = document.querySelector(".modal");
+var phoneInput = document.querySelector(".form__tel");
+var mailInput = document.querySelector(".form__mail");
+var forms = document.querySelectorAll(".form");
 var errorBlockForMail = document.querySelector('.form__error-popup-mail');
 var errorBlockForPhone = document.querySelector('.form__error-popup-phone');
 var formButton = document.querySelectorAll('.form__button');
@@ -53,25 +53,21 @@ buttonBuy.forEach((button) => {
 
 //Отправка формы
 
-form.addEventListener("submit", function (evt) {
-  if (!phoneInput.value) {
-    evt.preventDefault();
-  }
-
-  if (!mailInput.value) {
-    evt.preventDefault();
-  }
-
-  else {
-    if (isStorageSupport) {
-      localStorage.setItem("phone", phoneInput.value);
-      localStorage.setItem("mail", mailInput.value);
-      succesPopup.classList.add("modal-active");
+forms.forEach((form) => {
+  form.addEventListener("submit", function (evt) {
+    if (!mailInput.value || !phoneInput.value) {
+      evt.preventDefault();
     } else {
-      succesPopup.classList.add("modal-active");
+      if (isStorageSupport) {
+        localStorage.setItem("phone", phoneInput.value);
+        localStorage.setItem("mail", mailInput.value);
+        succesPopup.classList.add("modal-active");
+      } else {
+        succesPopup.classList.add("modal-active");
+      }
     }
-  }
-});
+  });
+})
 
 var closePopup = function () {
   phoneInput.value = "";
@@ -99,79 +95,27 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-//Валидация
-
-phoneInput.value.addEventListener('invalid', () => {
-  if (phoneInput.validity.patternMismatch) {
-    errorBlockForPhone.classList.add("form__error-active");
-    phoneInput.classList.add("modal__input-invalid");
-  } else if (phoneInput.validity.valueMissing) {
-    errorBlockForPhone.classList.add("form__error-active");
-    phoneInput.classList.add("modal__input-invalid");
-  } else {
-    phoneInput.setCustomValidity('');
-  }
-});
-
-mailInput.value.addEventListener('invalid', () => {
-  if (mailInput.validity.patternMismatch) {
-    errorBlockForMail.classList.add("form__error-active");
-    phoneInput.classList.add("modal__input-invalid");
-  } else if (mailInput.validity.valueMissing) {
-    errorBlockForPhone.classList.add("form__error-active");
-    mailInput.classList.add("modal__input-invalid");
-  } else {
-    mailInput.setCustomValidity('');
-  }
-});
-
-
-
-
-
-
-
-
-//Swipe
-jQuery(document).ready(function($) {
-  var alterClass = function() {
-    var ww = document.body.clientWidth;
-    if (ww > 1024) {
-      $('.slider').removeClass('swiper-container');
-      $('.buy-tour__list').removeClass('swiper-wrapper');
-      $('.slider__item').removeClass('swiper-slide');
-
-    } else if (ww <= 1023) {
-      $('.slider').addClass('swiper-container');
-      $('.buy-tour__list').addClass('swiper-wrapper');
-      $('.slider__item').addClass('swiper-slide');
-      const swiper = new Swiper(".swiper-container");
-    };
-  };
-  $(window).resize(function(){
-    alterClass();
-  });
-  alterClass();
-});
 
 //Slider
 
-// let tabs = document.querySelectorAll(".slider__link");
-// let countries = document.querySelector(".countries__item");
+let tabs = document.querySelectorAll(".slider__link");
+let countries = document.querySelectorAll(".countries__item");
 
-// tabs.forEach((tab, i) => {
-//   tab.addEventListener("click", function (evt) {
-//     evt.preventDefault();
-//     countries.forEach(country) => {
-//       if(country.classList.contains('slider__link--active')) {
-//         country.classList.remove('slider__link--active');
-//       }
-//       if (country === tabs) {
-//         country.classList.add('slider__link--active');
-//       }
-//     }
-//   })
-// })
-//при нажатии на каждый таб открывается карточка с тем де номером
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", function (evt) {
+    evt.preventDefault();
 
+    tabs.forEach((link) => {
+      link.classList.remove('slider__link--active')
+    })
 
+    tab.classList.add('slider__link--active')
+
+    countries.forEach((country, i) => {
+      country.classList.remove('countries__item--active');
+      if (index == i) {
+          country.classList.add('countries__item--active');
+      }
+    })
+  })
+})

@@ -97,6 +97,7 @@
     padding-top: 81px;
     padding-bottom: 82px;
     width: 228px;
+    line-height: 35px;
   }
 }
 
@@ -121,8 +122,8 @@
 
 @media (max-width: $mobile-width) {
   .promo__text {
-    color: $dark;
-    padding: 20px 5%;
+    color: $grey;
+    padding: 22px 5%;
     width: 100%;
     background-color: $white;
   }
@@ -164,7 +165,7 @@
 
 @media (max-width: $mobile-width) {
   .promo__button {
-    padding: 19px 145px 19px 40px;
+    padding: 19px 138px 19px 40px;
     max-width: 90%;
     margin: 0 auto;
 

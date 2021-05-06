@@ -37,6 +37,7 @@
     width: 90%;
     background-image: none;
     background-color: $light;
+    margin-bottom: 60px;
   }
 }
 
@@ -61,7 +62,7 @@
 @media (max-width: $mobile-width) {
   .question__wrapper {
     background-color: $light;
-    padding: 50px 0;
+    padding: 27px 0;
   }
 }
 
@@ -80,15 +81,29 @@
   }
 }
 
+@media (max-width: $mobile-width) {
+  .question__title {
+    padding-top: 20px;
+    margin: 0 0 10px 5px;
+  }
+}
+
 .question__text {
   @include offset(0, 0);
+  padding-top: 15px;
   line-height: 24px;
   margin-bottom: 24px;
 }
 
+@media (max-width: $tablet-width) {
+  .question__text {
+    padding-top: 0;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .question__text {
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
 }

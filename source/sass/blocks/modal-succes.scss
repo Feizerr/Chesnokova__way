@@ -21,7 +21,7 @@
 
 @media (max-width: $mobile-width) {
   .modal-succes__text {
-    @include fonts(16px, 24px)
+    @include fonts(16px, 24px);
     max-width: 100%;
     padding-top: 0;
   }

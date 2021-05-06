@@ -64,7 +64,6 @@
 @media (max-width: $tablet-width) {
   .price__item {
     padding: 33px 0 0 0;
-    border-radius: 10px;
     border: 1px solid rgba($dark, 0.3);
     display: flex;
     flex-wrap: wrap;
@@ -252,10 +251,10 @@
 }
 
 @media (max-width: $tablet-width) {
-  .price__button{
+  .price__button {
     padding: 19px 20px;
     height: min-content;
-    box-sizing: border-box
+    box-sizing: border-box;
   }
 }
 
@@ -340,10 +339,10 @@
 @media (max-width: $tablet-width) {
   .price__call-to-action {
     @include offset(0, 0);
+    @include fonts(18px, 34px);
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    @include fonts(18px, 34px)
     margin-bottom: 10px;
     text-align: center;
   }
@@ -374,9 +373,9 @@
 
 .price__phone-link {
   @include fonts(20px, 32px);
+  @include link();
   text-align: right;
   margin-bottom: 30px;
-  @include link();
   display: block;
   color: $dark;
   box-sizing: border-box;
